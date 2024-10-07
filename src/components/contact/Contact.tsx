@@ -42,12 +42,6 @@ export const contacts: Contact[] = [
     icon: <AiFillGithub className="contact-icon" />,
     url: "https://github.com/forbesus",
   },
-  {
-    name: "LOCATION & ZONE:",
-    info: "Japan, UTC+9",
-    icon: <IoLocationOutline className="contact-icon" />,
-    url: "https://www.timeanddate.com/time/zone/japan",
-  },
 ];
 
 const Contact = () => {
