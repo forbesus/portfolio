@@ -1,7 +1,6 @@
 import React from "react";
 import { Heading, Text, Button } from "@chakra-ui/react";
 import { AiFillGithub, AiOutlineArrowRight, AiOutlineMail } from "react-icons/ai";
-import { FaDiscord } from "react-icons/fa";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
 import "./About.css";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -42,9 +41,6 @@ const About = () => {
             <div className="icons">
               <a href="https://github.com/forbesus" target="_blank" rel="noreferrer">
                 <AiFillGithub className="icon" />
-              </a>
-              <a href="https://discord.com/users/1036814817887014922" target="_blank" rel="noreferrer">
-                <FaDiscord className="icon" />
               </a>
               <a href="https://t.me/forbes35" target="_blank" rel="noreferrer">
                 <BsTelegram className="icon" />

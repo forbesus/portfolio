@@ -3,8 +3,6 @@ import { Button } from "@chakra-ui/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaDiscord } from "react-icons/fa";
 import { v4 as uuidv4 } from "uuid";
 import "./Contact.css";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -23,12 +21,6 @@ export const contacts: Contact[] = [
     info: "tomoyuki.ant@gmail.com",
     icon: <MdOutlineEmail className="contact-icon" />,
     url: "mailto:tomoyuki.ant@gmail.com",
-  },
-  {
-    name: "DISCORD:",
-    info: "@forbes99",
-    icon: <FaDiscord className="contact-icon" />,
-    url: "https://discord.com/users/1036814817887014922",
   },
   {
     name: "TELEGRAM:",

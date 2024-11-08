@@ -166,25 +166,14 @@ const Terminal: React.FC = () => {
             {Text3.includes("Access") ? <span>What is this? It's an interactive terminal you can use to learn more about me and my work.</span> : ""}<br />
             {Text3.includes("Access") ? <span><span style={{ color: "skyblue" }}>Available Commands:</span></span> : ""}
             {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>General: </span> about, projects, all links, clear</span> : ""}
-            {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>Links:</span> github, email, discord, telegram</span> : ""}
+            {Text3.includes("Access") ? <span><span style={{ color: "#c9c9c9" }}>Links:</span> github, email, telegram</span> : ""}
 
             <br></br>
             {Text3.includes("Access") ? <span>Thank you for visiting!◝(ᵔᵕᵔ)◜</span> : ""}
             <br></br>
             <ul className='previousCommands' id='console23'>
               {prevusedCommand.map((item, index) => {
-                if (item.match(new RegExp(`\\b${"discord"}\\b`, "g"))) {
-                  return (
-                    <div  className="mcq-wrapper">
-                      <li className="userPrefix" key={index}>{item}</li>
-                      <ul id="mcq" className="mcq">
-                        <li key={index} className="mcq-option">My Discord: <a href="https://discord.com/users/1036814817887014922" rel="noreferrer" target="_blank">forbesus ↗</a></li>
-                      </ul>
-                      <br />
-                    </div>
-                  );
-                }
-                else if (item.match(new RegExp(`\\b${"github"}\\b`, "g"))) {
+                if (item.match(new RegExp(`\\b${"github"}\\b`, "g"))) {
                   return (
                     <div  className="mcq-wrapper">
                       <li className="userPrefix" key={index}>{item}</li>
@@ -226,7 +215,6 @@ const Terminal: React.FC = () => {
                           <li className="mcq-option" tabIndex={0}><a href="https://github.com/forbesus" target='_blank' rel="noreferrer">My Github: @forbesus ↗</a></li>
                           <li className="mcq-option" tabIndex={1}><a href="mailto:tomoyuki.ant@gmail.com" target='_blank' rel="noreferrer">My Email: tomoyuki.ant@gmail.com↗</a></li>
                           <li className="mcq-option" tabIndex={3}><a href="https://t.me/forbes35" target='_blank' rel="noreferrer">My Telegram: @forbes35 ↗</a></li>
-                          <li className="mcq-option" tabIndex={4}><a href="https://discord.com/users/1036814817887014922" target='_blank' rel="noreferrer">My Discord: forbes99 ↗</a></li>
                         </ul>
                       </div><br />
                     </div>

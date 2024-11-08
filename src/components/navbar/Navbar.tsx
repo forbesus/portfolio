@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Heading, Text } from "@chakra-ui/react";
 import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
-import { FaDiscord } from "react-icons/fa";
 
 import { BsTelegram } from "react-icons/bs";
 
@@ -41,9 +40,6 @@ const Navbar = () => {
         <div className="icons">
           <a href="https://github.com/forbesus" target="_blank" rel="noreferrer">
             <AiFillGithub className="icon" />
-          </a>
-          <a href="https://discord.com/users/1036814817887014922" target="_blank" rel="noreferrer">
-            <FaDiscord className="icon" />
           </a>
           <a href="https://t.me/forbes35" target="_blank" rel="noreferrer">
             <BsTelegram className="icon" />
